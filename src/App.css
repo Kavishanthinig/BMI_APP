@@ -1,0 +1,159 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image:linear-gradient(pink,aqua); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  padding: 20px;
+}
+
+.left-section {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  color:brown
+}
+
+input[type="text"]:focus {
+  border-color: red;
+  outline: none;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:first-of-type {
+  background-color: blue;
+  color: white;
+}
+
+button:first-of-type:hover {
+  background-color:blue;
+}
+
+button:last-of-type {
+  background-color: blue;
+  color: white;
+}
+
+button:last-of-type:hover {
+  background-color: greenyellow;
+}
+
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0fdf4; 
+  border-radius: 12px;
+  margin-left: 20px;
+}
+
+.result-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.result-status {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.advice {
+  font-size: 14px;
+  color: green;
+  text-align: center;
+}
+
+.get-tips-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.get-tips-button:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .left-section {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+  }
+
+  .right-section {
+    margin-left: 0;
+    padding-top: 20px;
+  }
+}
